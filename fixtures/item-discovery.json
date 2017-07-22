@@ -1,0 +1,30 @@
+{
+  "resources": [
+    {
+      "name": "item",
+      "methods": {
+        "GET": {
+          "uri": "/items/{id}",
+          "params": {
+            "optional": ["id", "page", "per_page"],
+            "required": []
+          }
+        }
+      },
+      "resources": [
+        {
+          "name": "sub-resource",
+          "uri": "/items/{id}/sub-resource",
+          "methods": {
+            "GET": {
+              "params": {
+                "optional": [],
+                "required": ["id"]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
