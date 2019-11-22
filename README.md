@@ -15,7 +15,6 @@ You must provide a master discovery file that looks like:
 ```
 which points to individual service discovery files that look like:
 ```
-```
 {
   "resources": [
     {
